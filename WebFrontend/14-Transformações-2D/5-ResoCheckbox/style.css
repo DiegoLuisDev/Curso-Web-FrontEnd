@@ -1,0 +1,58 @@
+.chk1 {
+    display: none;
+}
+
+.chk1+label span {
+    display: inline-block;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    background-color: rgb(248, 84, 84);
+}
+
+.chk1:checked + label span {
+    background-color: blue;
+    position: relative;
+}
+
+.chk1:checked + label span::before{
+    content: "";
+    display: block;
+    border: 0.087em solid white;
+    position: absolute;
+    top: 0.077em;
+    left: 0.38em;
+    right: 0.3em;
+    bottom: 0.3em;
+    transform: rotate(45deg);
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+
+.lbl2 {
+    display: inline-block;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    background-color: rgb(248, 84, 84);
+}
+
+.lbl2:checked + input {
+    background-color: blue;
+    position: relative;
+}
+
+.lbl2:checked + input::before{
+    content: "";
+    display: block;
+    border: 0.077em solid white;
+    position: absolute;
+    top: 0.077em;
+    left: 0.38em;
+    right: 0.3em;
+    bottom: 0.3em;
+    transform: rotate(45deg);
+    border-left-color: transparent;
+    border-top-color: transparent;
+}

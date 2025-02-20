@@ -1,0 +1,27 @@
+/* List Style
+    list-style-type
+    list-style-position
+    list-style-image
+*/
+body {
+    font-family: sans-serif;
+}
+
+ul li {
+    list-style-type: square;
+    /* formatará toda li que estiver dentro de ul */
+    list-style-position: outside;
+    /* outside - fora da lista: vem por padrão 
+    inside - dentro da lista 
+    list-style-type: none;
+    remove a marcação da lista
+    */
+}
+
+ol li {
+    list-style-type: decimal;
+    /* decimal é o padrão
+    simplficando tanto type e position: 
+    list-style: upper-latin inside;
+    */
+}

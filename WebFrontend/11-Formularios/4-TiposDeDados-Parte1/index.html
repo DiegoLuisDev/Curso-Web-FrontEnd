@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Tipos de Entrada de Dados:
+        input:
+            text
+            password 
+            checkbox
+            radio
+            file
+            hidden
+            submit
+            button
+            reset
+        
+        Input (Html5)
+            emial 
+            tel
+            url
+            search
+            number
+            range
+            date
+            time
+            color
+     -->
+    <form>
+        <fieldset>
+            <legend>Introdução</legend>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="filhos">Quantidade de filhos(a):</label>
+            <input type="number" id="filhos" min="0" max="100">
+            <br><br>
+
+            <input type="date" min="2024-01-15" max="2024-09-16">
+            <br><br>
+
+            <label>
+                <input type="radio" name="atvExtra">Sim
+            </label>
+
+            <label>
+                <input type="radio" name="atvExtra">Não
+            </label>
+            
+            <br><br>
+
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

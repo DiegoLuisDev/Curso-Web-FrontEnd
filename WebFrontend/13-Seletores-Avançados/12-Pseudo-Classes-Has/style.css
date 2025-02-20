@@ -1,0 +1,18 @@
+p::first-letter {
+/*  seleciona a primeira letra */
+    font-size: 3em;
+    float: left;
+    margin-right: 0.2em;
+    line-height: 1;
+}
+
+p::first-line {
+/*  seleciona a primeira linha */
+    color: red;
+}
+
+::selection {
+/*  quando selecionamos algo com o mouse, o fundo ficará laranja */
+    background-color: orange;
+}
+

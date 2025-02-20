@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px 100px 100px 100px ;
+    width: 80%;
+    margin: auto;
+    color: #444;
+    background-color: #e7e7e7;
+}
+.p1 {
+    background-color: #cccffe;
+    text-align: center;
+    margin-top: 0;
+}
+
+h1 {
+    background-color: #acafd4;
+    color: #061761;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+h2 {
+    background-color: #b6b6b6;
+    color: #061761;
+    padding: 10px;
+    font-size: 36px;
+    border-bottom: 3px solid;
+    /* quando o omitimos a cor da borda, ele receberá a cor do texto */
+    margin-top: 48px;
+    margin-bottom: 12px;
+
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-position: inside;
+}
+
+a {
+    text-decoration: none; 
+    /* Está retirando o traço (underline) que vem por padrão no link (traço em baixo) */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    /* background-color: #b6b6b6; */
+    text-align: right;
+    margin: 40px 0;
+}
+
+.menu li {
+    display: inline-block;
+    /* padding: 20px; */
+}
+
+.menu a {
+    background-color: #b6b6b6;
+    padding: 20px;
+    color: #061761;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}

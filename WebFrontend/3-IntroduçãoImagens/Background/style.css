@@ -1,0 +1,65 @@
+/* A propriedade background no CSS é uma abreviação usada para definir vários aspectos do plano de fundo de um elemento em uma única linha. Essa propriedade pode combinar várias subpropriedades, como background-color, background-image, background-repeat, background-attachment, background-position, e outras. Aqui está uma visão geral das subpropriedades que podem ser incluídas na propriedade abreviada background: */
+
+/* background-color: #4e4e4e;
+Define a cor de fundo de um elemento. 
+
+background-image: url(imagens/tile-pattern.png);
+ Define uma ou mais imagens de fundo para um elemento.
+
+background-repeat: no-repeat;
+Define como a imagem de fundo é repetida. Os valores podem ser repeat, repeat-x, repeat-y, ou no-repeat.
+
+background-attachment: fixed;
+Define se a imagem de fundo rola com o resto da página ou é fixada. Os valores podem ser scroll ou fixed.
+
+background-position: center;
+Define a posição inicial da imagem de fundo. Os valores podem ser palavras-chave (como top, right, bottom, left, center) ou coordenadas.
+
+background-size: cover;
+Define o tamanho da imagem de fundo. Os valores podem ser auto, cover, contain, ou valores específicos em unidades de medida (como pixels ou porcentagem).
+
+background-clip: border-box;
+Define a área de pintura do fundo. Os valores podem ser border-box, padding-box, ou content-box.
+
+background-origin: padding-box;
+Define a posição inicial de uma imagem de fundo em relação à área de conteúdo, padding ou borda.
+
+Sintaxe da Propriedade background (abreviação)
+background: 
+[background-color] [background-image] [background-repeat] [background-attachment] [background-position] / [background-size] [background-origin] [background-clip];
+
+Exemplo Completo
+body {
+    background: #4e4e4e url(imagens/tile-pattern.png) no-repeat fixed center / cover padding-box border-box;
+}
+
+Usando Propriedades Separadas
+body {
+    background-color: #4e4e4e;
+    background-image: url(imagens/tile-pattern.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: padding-box;
+}
+
+*/
+
+body {
+    font-size: 200%;
+    line-height: 2; /* espaçamento */
+    color: white;
+    background: #4e4e4e url(imagens/tile-pattern.png) no-repeat fixed right bottom;
+    /* no background podemos usar a seguinte sequência:
+    background-color 
+    background-image
+    background-repeat
+    background-attachment
+    background-position;
+    no background podemos adicionar outros valores */
+    background-size: cover;
+    /* cover é exclusivamente do background-size, não pode ser  */
+}
+

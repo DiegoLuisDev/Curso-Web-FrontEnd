@@ -1,0 +1,19 @@
+/*  */
+div {
+    margin: 100px auto;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+
+    outline: 4px solid red;
+    outline-style: dashed;
+    box-sizing: border-box;
+    outline-offset: 16px;
+    /* Aqui ele dará 16px de distancia entre o elemento e a linha */
+
+
+}
+
+div:hover {
+    outline: 6px solid red;
+}

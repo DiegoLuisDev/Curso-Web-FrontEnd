@@ -1,0 +1,41 @@
+a{
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+a[target="_blank"]::after {
+/*  seleciona a tag A que tem o atributo target com o valor _blank
+::after irá colocar a formatação no final, após o link */
+    content: url(imagens/newWindow-icon.png);
+/* adiciona um conteúdo, nesse caso uma imagem */
+    margin-left: .5em;
+}
+
+a[href$=".pdf"]::before {
+/*  seleciona a tag A que tem o atributo href com o valo 
+.pdf
+::after irá colocar a formatação no final, após o link */
+    content: url(imagens/pdf-icon.gif);
+    /* adiciona um conteúdo, nesse caso uma imagem */
+    margin-right: 0.5em;
+}
+
+input[type="checkbox"]:checked + label {
+/* seleciona o label do input que já está checked com o atributo type que tem o valor checkbox */
+    color: green;
+}
+
+input[type="checkbox"]:not(:disabled) + label {
+    /* seleciona o label do input que contém o atributo type que tem o valor checkbox */
+        color: blue;
+    }
+
+input[type="checkbox"] + label {
+/* seleciona o label do input que contém o atributo type que tem o valor checkbox */
+    color: red;
+}
+
+li li:nth-child(3) {
+/* seleciona o label do input que já está checked com o atributo type que tem o valor checkbox */
+    background-color: aquamarine;
+}

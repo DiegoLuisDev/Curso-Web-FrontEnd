@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    border: 2px solid red;
+    width: 25%;
+}
+
+p {
+    width: 50%;
+    background-color: #ccc;
+}
+
+a {
+    background-color: yellow;
+    /* 
+    height: 50px;
+    width: 100px;
+    Altura e largura Não funcionaram em elementos inline(linha) */
+}
+
+strong {
+    background-color: #fafafa;
+    padding: 25px;
+    display: block;
+    /* permitirá colocará padding, width..., porém ele pulará linha */
+}
+
+em {
+    background-color: aqua;
+    padding: 25px;
+    display: inline-block;
+    /* permitirá colocará padding, width..., porém ele não pulará linha */
+}
+
+b {
+    display: none;
+    /* removerá o conteúdo sem espaço */
+}
+
+i {
+    display: inline-block;
+    visibility: hidden;
+    /* removerá o conteúdo, porém deixará o espaço */
+}

@@ -1,0 +1,45 @@
+/* Flexbox Axes:
+flex-direction: 
+row: mainAxis horizontal da esquerda para direita, crossAxis vertical de cima para baixo
+
+row-reverse: mainAxis horizontal da direita para esquerda, crossAxis horizontal de cima para baixo
+
+column: mainAxiss vertical de cima para baixo, crossAxis horizontal da esquerda para direita
+
+column-reverse: mainAxis de baixo para cima, crossAxis horizontal da esquerda para direita
+
+*/
+
+body {
+    margin-bottom: 500px;
+}
+.flexbox {
+    height: 250px;
+    display: flex;
+    border: solid 2px red;
+    margin-bottom: 16px;
+}
+
+.flexbox div{
+    border: solid 2px black;
+    width: 50px;
+    margin: 15px;
+}
+
+.flex-container1 {
+    flex-flow: nowrap;
+}
+
+.flex-container2 {
+    flex-direction: column; 
+    /* O padrão é row */
+    justify-content: flex-end; /* Vai para direita*/
+    align-items: flex-start; /* Vai para cima*/
+    height: 400px;
+}
+
+.flex-container2 div {
+    background-color: yellow;
+    width: 50px;
+    height: 20px;
+}

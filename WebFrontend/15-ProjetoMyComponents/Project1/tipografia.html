@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto My Components</title>
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#">
+                <img class="main-perfil-img" src="imagens/perfil.png" alt="Foto de Perfil">
+            </a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <h1>My Components</h1>
+
+        <article class="hight-light">
+            <h2>Tipografia</h2>
+            <p>A Tipografia transmite nossas definições de tamanhos e espaçamento e deve ser utilizada respeitando a hierarquia dos elementos na interface</p>
+
+        </article>
+
+        <section>
+            <h3>Elementos</h3>
+
+            <article>
+                <h4>Textos</h4>
+
+                <p>Esse texto esta escrito em <b>negrito</b> e esse texto é um <strong>texto forte</strong>.</p>
+                <!-- Strong: tag semantica
+                b: tag sem semantica -->
+                <p>Esse texto está em <i>itálico</i> e este está <em>com ênfase</em>.</p>
+                <!-- em: quando queremos da ênfase na frase
+                i: quando apenas queremos um texto em itálico -->
+                <p>Isto é um texto escrito de forma <u class="underline">erada</u> e isso é um <a href="#">link</a></p>
+                <!--  -->
+            </article>
+
+            <article>
+                <h4>Sobreescrito e subscrito</h4>
+                <p>3 <sup>2</sup> é igual à 9</p>
+                <!-- sup: eleva o caractere -->
+
+                <p>a fórmula da água é H <sub>2</sub>O</p>
+                <!-- sub: abaixa o caractere  -->
+            </article>
+
+            <article>
+                <h4>Abreviações</h4>
+                <p>
+                    Para criar páginas na web precisamos aprender sobre 
+                    <a href="html-dfn"><abbr title="HiperText Markup Language">HTML</abbr></a>.
+                    <!-- tag abbr: para abreviar de forma semantica -->
+                </p>
+
+                <p>O 
+                <dfn id="html-dfn">
+                    <abbr title="HiperText Markup Language">HTML</abbr>
+                    <!-- tag dfn: Uma tag que podemos utilizar junto com abbr, o html ficará ainda mais semantico -->
+                </dfn> é a principal estrutura da web onde podemos incluir nosso conteúdo de forma semântica</p>
+            </article>
+
+            <article>
+                <h4>Citações</h4>
+
+                <!-- 
+                    As tags <blockquote>, <q>, e <cite> no HTML têm finalidades distintas, mas todas estão relacionadas a citações e referências de conteúdo. Abaixo estão as diferenças e exemplos de uso de cada uma: 
+
+                        <blockquote>
+                            Uso: Para indicar uma citação longa em bloco (geralmente várias linhas), retirada de uma outra fonte.
+                        
+                        <q>
+                            Uso: Para citações curtas dentro do texto, geralmente uma frase ou parte de uma frase.
+                        
+                        <cite>
+                            Uso: Para citar a fonte de um trabalho, como o título de um livro, artigo, filme, etc.
+
+                        <blockquote>: 
+                            Para trechos mais longos que exigem destaque e formatação em bloco.
+                        <q>: 
+                            Para citações curtas e incorporadas diretamente no fluxo do texto.
+                        <cite>: 
+                            Para referenciar o título de uma obra ou a fonte de uma citação.
+                -->
+
+                <blockquote>
+                    <p>
+                        O ruim não é ter trabalho, o ruim é ter que trabalhar
+                    </p>
+                    <cite>Seu Madruga</cite>
+                </blockquote>
+
+                <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+                    O Elemento HTML &lt;blockquote&gt;
+                    <!-- &lt; &gt; Quando queremos adicionar um trecho de código e o browser não assimilar como um código verdadeiro-->
+                    (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação.
+                    <cite>MDN</cite>
+                    <!-- blockquote quando temos  -->
+                </blockquote>
+
+                <P>
+                    Segundo o Seu Madruga <q cite="https://www.pensador.com/frase/MjEwNjc/">A vingança nunca é plena, mata a alma e envenena</q>.
+                </P>
+                <p>
+                    De acordo com o site da Mozila,
+                    <q cite="https://www.mozilla.org/pt-BR/about/history/">Firefox 1.0 foi lançado em 2004 e se tornou um grande sucesso
+                    </q>
+                </p>
+
+                <p>
+                    O filme <cite>Escola do Rock</cite> contém várias músicas antigas.
+                </p>
+            </article>
+
+            <article>
+                <h4>Coisas de Pc</h4>
+
+                <p>
+                    A propriedade <code>background</code>
+                    <!-- Identificar para o browser que a frase é um código -->
+                    do CSS serve para adicionar uma imagem de fundo
+                </p>
+
+                <pre>
+                    Este texto é um 
+                    
+                    texto pré-formatado.
+                    <!-- Tudo que fizermos no pre, ele adicionará na página -->
+                </pre>
+
+                <pre>
+                    <code>
+                        article {
+                            padding-top; 1px;
+                            padding-bottom; 1px;
+                        }
+                        <!-- O texto está formatado e o browser está assimilando como código  -->
+                    </code>
+                </pre>
+
+                <p>
+                    Após executar o método <code>push()</code> obtive o retorno <samp lang="en-us"> undefined has not a push function</samp>
+                </p>
+
+                <p>Pressione a tecla <kbd>CRTL</kbd> + <kbd>C</kbd> para copiar</p>
+
+            </article>
+
+            <article>
+                <h4>Datas e Horários</h4>
+
+                <p>
+                    O evento ocorrerá em <time datetime="2025-11-10">10 de Novembro de 2025</time>.
+                </p>
+                <p>
+                    O evento ocorrerá em <time datetime="2025-11-10">10/11/2025</time>.
+                </p>
+                <p>
+                    O evento ocorrerá ás <time datetime="2025-11-10T20:00:00-03:00">20h00 do dia 10 de novembro de 2025</time>.
+                </p>
+
+                <h5 lang="en-us">JS Conference</h5>
+                <p>
+                    O evento iniciará exatamente ás <time datetime="19:00">19h00</time>.
+                </p>
+
+                <p>
+                    O evento ocorrerá ás 20h00 do dia 
+                    <del datetime="2024-10-23"> 10 de novembro de 2025</del>
+                    <ins><time datetime="2025-11-10T20:00:00-03:00"> 11 de novembro de 2025 </time></ins>..
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

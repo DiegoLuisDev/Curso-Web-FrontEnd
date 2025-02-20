@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(36, 36, 36);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.section-content {
+    padding: 1px;
+    background-color: black;
+    color: white;
+    margin: 100px auto;
+    height: 70vh;
+    width: 45vw;
+    text-align: center;
+}
+
+h1 {
+    margin: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    
+}
+
+input {
+    color: white;
+    border: none;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+legend {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+
+.btn {
+    font-size: 1.2rem;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    width: fit-content;
+    margin-top: 1rem;
+    margin-left: auto;
+    border: none;
+}

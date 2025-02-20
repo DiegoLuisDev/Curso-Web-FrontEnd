@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,100&display=swap');
+
+@font-face {
+    font-family: nadia;
+    src: 
+    local("Nadia Serif"), local("Nadia-Serif"),
+    url(fonts/nadia/nadia-serif.ttf)format("trutype"), 
+    url(fonts/nadia/nadia-serif.woff)format("woff"), 
+    url(fonts/nadia/nadia-serif.svg)format("svg");
+}
+
+@font-face {
+    font-family: 'chunkfiveregular';
+    src:
+    url(fonts/chunkRegular/chunkfive-regular-webfont.woff2) format('woff2'),
+    url(fonts/chunkRegular/chunkfive-regular-webfont.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'chunkfiveregular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    background-color: #ccc;
+    width: 80%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    line-height: 2;
+}

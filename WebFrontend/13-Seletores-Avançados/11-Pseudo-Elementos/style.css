@@ -1,0 +1,16 @@
+/* Has seleciona o elemento que contém tal tag dentro */
+p a[href="#"] {
+    background-color: aqua;
+}
+
+p:has(a[href="#"]) {
+    background-color: #ccc;
+}
+
+p:has(a[href=""]) {
+    background-color: #9b9b9b;
+}
+
+p:has(.teste) {
+    background-color: rgb(251, 79, 79);
+}

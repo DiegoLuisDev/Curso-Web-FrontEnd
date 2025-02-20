@@ -1,0 +1,62 @@
+/* Imagens no CSS
+As imagens usadas no CSS geralmente são utilizadas para estilização e decoração de elementos. Elas são tratadas como elementos de fundo e não fazem parte do conteúdo principal da página.
+
+Vantagens:
+1: Estilização: Ideal para imagens de fundo, padrões repetidos, texturas e efeitos visuais.
+2: Controle: Oferece maior controle sobre como a imagem é exibida, incluindo tamanho, repetição, posição, entre outros.
+3: Separação de Conteúdo e Estilo: Mantém o HTML limpo e sem elementos de apresentação, seguindo o princípio de separação de preocupações. 
+
+
+Imagens no HTML
+As imagens no HTML são usadas quando a imagem faz parte do conteúdo principal da página. Elas são elementos visíveis diretamente ao usuário e podem ser manipuladas facilmente através do DOM.
+
+Vantagens:
+1: SEO: Imagens em HTML podem ter atributos alt que ajudam nos motores de busca a indexar o conteúdo e também são importantes para acessibilidade.
+2: Responsividade: Com as tags <img>, <picture>, e srcset, é possível servir diferentes versões da imagem para diferentes tamanhos de tela.
+3: Interatividade: As imagens em HTML podem ser manipuladas diretamente através de JavaScript para criar interações dinâmicas.
+
+Conclusão
+1: Use imagens no CSS para elementos de fundo e decorativos que fazem parte do design visual.
+2: Use imagens no HTML para conteúdo que é parte integral da informação ou interatividade da página.*/
+
+body {
+    font-size: 22px;
+    font-family: sans-serif;
+    width: 700px;
+    margin: auto;
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+ /* no-repeat: imagen não se repetirá
+    repeat: imagem se repetirá até o final do página
+    repeat-y: se repetirá na vertical
+    repeat-x: se repetirá na horizontal*/
+    background-size: cover;
+ /* contain: ele dará preferência a imagem (algumas
+    partes da página podem ficar sem imagem) 
+    cover: mostrará toda a imagem, podendo cortar algumas partes da imagem */
+    background-attachment: fixed;
+    /* a imagem fica fixa, não scrola com o o conteúdo */
+    background-position: right bottom;
+    /* dará preferência para a parte do canto direito da foto */
+    
+}
+
+p {
+    line-height: 1.5;
+    /* dá um espaçamento maior entre palavras e linhas*/
+    text-align: justify;
+}
+
+.img-logo {
+    width: 400px;
+}
+
+.img-html {
+    float: left;
+    /* a imagem se ajustará no texto e ficará a esquerda */
+}
+
+.img-css {
+    float: right;
+    /* a imagem se ajustará no texto e ficará a direita */
+}

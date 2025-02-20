@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #FED001;
+}
+html {
+    /* font-size: 62.5%;      
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; */
+    font:400 62.5% 'Inter', sans-serif;  
+    /*Abreviação: font-weight, font-size, font-family */
+}
+
+p, a {
+    font-size: 1.6rem;
+}
+
+nav a {
+    color: inherit;
+    /* Herdará do seu elemento pai */
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.wrapper-container-dark {
+    background-color: #2a2a2a;
+    color: #fafafa;
+    color: green;
+}
+
+.wrapper-container-light {
+    background-color: #fafafa;
+}
+
+.wrapper-container-dark2 {
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* alinhou os itens na vertical */
+    color: var( --primary-color);
+    padding: 2rem 0;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 0.6rem;
+    list-style-type: none;
+}
+
+.header-nav a {
+    padding: 0.75em 1.15em;
+    border: solid 1px;
+    text-decoration: none;
+}
+

@@ -1,0 +1,39 @@
+/* Self Aling e Order */
+
+body {
+    margin-bottom: 500px;
+}
+.flexbox {
+    height: 250px;
+    display: flex;
+    border: solid 2px red;
+    margin-bottom: 16px;
+}
+
+.flexbox div{
+    border: solid 2px black;
+    width: 50px;
+    margin: 15px;
+}
+
+.flex-container1 {
+    flex-direction: column;
+}
+
+.flex-container1 div {
+    /* flex-basis: 200px; */
+    background-color: green;
+    color: white;
+    font-size: 30px;
+}
+
+.flex-container1 .div1 {
+    order:3;
+    /* Quanto maior o valor, mais para ele ficará */
+    align-self: center;
+}
+
+.flex-container1 .div2 {
+    order: 2;
+    align-self: flex-end;
+}

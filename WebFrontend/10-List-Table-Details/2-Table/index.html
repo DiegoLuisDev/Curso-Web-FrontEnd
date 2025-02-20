@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Coluna simples com apenas uma linha e uma coluna -->
+    <table>
+        <tr> <!-- tr: table row 
+        1 linha -->
+            <td> td<!-- td: table data
+            1 coluna --></td>
+        </tr>
+    </table>
+
+    <!-- Coluna com 3 linhas(tr) e 2 colunas(td) -->
+    <table>
+        <tr> 
+            <td>1A</td>
+            <td>1B</td>
+        </tr>
+        <tr> 
+            <td>2A</td>
+            <td>2B</td>
+        </tr>
+        <tr> 
+            <td>3A</td>
+            <td>3B</td>
+        </tr>
+    </table>
+
+    <!-- Colspan - mescla colunas 
+         rowspan - mescla linhas -->
+    <table>
+        <tr> 
+            <td colspan="2">1A</td>
+            <!-- ocupará 2 colunas -->
+        </tr>
+        <tr> 
+            <td rowspan="2">2A</td>
+            <td>2B</td>
+        </tr>
+        <tr> 
+            
+            <td>3B</td>
+        </tr>
+    </table>
+
+    <!-- Table header -->
+    <table>
+        <tr> 
+            <th>1A</th>
+            <th>1B</th>
+            <!-- 2 colunas de cabeçario -->
+        </tr>
+        <tr> 
+            <td>2A</td>
+            <td>2B</td>
+        </tr>
+        <tr> 
+            <td>3A</td>
+            <td>3B</td>
+        </tr>
+    </table>
+
+     <!-- Table header e table body -->
+     <table>
+        <thead>
+            <tr> 
+                <th>1A</th>
+                <th>1B</th>
+                <!-- 2 colunas de cabeçario -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> 
+                <td>2A</td>
+                <td>2B</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr> 
+                <th>FA</th>
+                <th>FB</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- border-collapse o valor padrão
+    separate - os elementos ficaram com uma leve separação
+    collapse - os elementos ficaram todos juntos, sem espaçamento entre eles -->
+</body>
+</html>

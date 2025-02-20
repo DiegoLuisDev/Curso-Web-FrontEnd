@@ -1,0 +1,60 @@
+<!-- Introdução a Responsividade 
+
+Um CSS para cada tipo de mídia - media type
+<link href="tela.css" rel="stylesheet" media="screen">
+Era usado para monitor
+
+Um CSS para cada tipo de mídia - media type
+<link href="impressão.css" rel="stylesheet" media="print">
+Era usado caso o usuário precisasse salvar algo
+
+Um CSS para cada tipo de mídia - media type
+<link href="mobile.css" rel="stylesheet" media="handheld">
+Era usado para os dipositivos movéis
+
+Consultando especificações de mídia - media queries
+
+@media screen and (max-width:480px) {
+    body {
+        background: red;
+    }
+}
+
+@media screen and (min-width:481px) {
+    body {
+        background: blue;
+    }
+}
+
+Media queries:
+min-width / max-width
+min-height / max-height
+orientation
+aspect-ratio
+resolution
+prefers-color-scheme
+prefers-reduced-motion
+
+META TAG <VIEWPORT>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>titulo da página </title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+RECURSOS FLEXÍVEIS 
+    img {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+
+GRIDS FLUÍDAS
+
+1. float / clear
+2. flexbox
+3. css grid
+
+-->
