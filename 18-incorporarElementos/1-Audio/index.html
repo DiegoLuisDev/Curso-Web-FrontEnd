@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <!-- <audio src="media/mozart_trompa.mp3" controls></audio> -->
+    <!-- A forma mais adequada é utilizando mais de um tipo de audio e com a tag source -->
+
+    <figure>
+        <!-- Oferece uma camada a mais de Responsividade -->
+        <audio controls>
+            <!-- Da aos usuarios as opções de controle sobre o audio, parar, volume... -->
+            <source src="media/mozart_trompa.mp3" type="audio/mpeg">
+            <source src="media/mozart_trompa.ogg" type="audio/ogg">
+            <p>O seu browser não suporta o recurso de áudio</p>
+        </audio>
+        <figcaption>Narração sobre algo</figcaption>
+    </figure>
+</body>
+</html>

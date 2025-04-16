@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption>
+            Tabela de preços de cursos
+
+            <!-- A tag <caption> no HTML é usada para fornecer uma legenda ou título descritivo para uma tabela. Ela é colocada diretamente após a abertura da tag <table> e antes do conteúdo da tabela (como as tags <thead>, <tbody>, etc.). -->
+        </caption>
+
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Desing</td>
+                <td>InDesing</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Desing</td> -->
+                <td>Photoshop</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Desing</td> -->
+                <td>Illustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Development</td> -->
+                <td>CSS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Development</td> -->
+                <td>javascript</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Development</td> -->
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeitos a alterações sem aviso previo</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

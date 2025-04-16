@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+section {
+    height: 100vh;
+    /* svh: small viewport height - Subtrai o tamanho da barra de endereço do mobile
+       lvh: large viewport height - Adiciona o tamanho da barra de endereço do mobile
+       dvh: dinamic viewport height - Atualiza o tamanho da barra de endereço do mobile
+     */
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+section:nth-child(odd) {
+    background-color: blueviolet;
+}
+
+section:nth-child(even) {
+    background-color: brown;
+}

@@ -1,0 +1,30 @@
+body {
+    margin-bottom: 100vh;
+}
+
+div {
+  /* transform: translate(x, y);
+  Se apenas um valor for fornecido, ele será aplicado ao eixo X e o eixo Y será considerado 0 (ou seja, sem movimento vertical). */
+  outline: 1px solid #888;
+  width: 80%;
+  height: 200px;
+  margin: 0.5em auto;
+}
+
+p {
+    width: 100%;
+}
+
+.destaque {
+    background-color: yellow;
+}
+
+.div1 .destaque {
+    transform: translate(100px) rotate(45deg);
+    transform-origin: left bottom;
+}
+
+.div2 .destaque {
+    transform: rotate(45deg) translate(100px);
+    transform-origin: left bottom;
+}

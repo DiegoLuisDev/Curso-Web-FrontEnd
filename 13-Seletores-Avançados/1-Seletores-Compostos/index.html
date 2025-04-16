@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+</head>
+<style>
+ /* Descendência: article p b {}
+    - selecionará somente a tag b
+
+    Filho direto: article p > a {} 
+    - selecionará somente a tag a
+
+    Irmão adjacente: article h3 + p {}
+    - selecionará a tag p, se ela for a mais proxima da tag h3
+    article p + p {}: Será selecionado a tag p que vinher logo após outra tag p
+
+    Próximos irmãos: article h3 ~ p {}
+    - selecionará todas as tag p que vinherem depois da tag h3, mesmo que tenha outras tags no meio
+    */
+
+
+    article h3 ~ p {
+        background-color: red;
+    }
+</style>
+<body>
+
+    <article>
+
+        <p>
+            <a> <b>1</b> </a>
+        </p>
+
+        <h3>2</h3>
+
+        <p>
+            <a> <b>3</b> </a>
+        </p>
+
+        <p>
+            <a> <b>4</b> </a>
+        </p>
+
+        <a>5</a>
+
+        <p>
+            <a> <b>6</b> </a>
+        </p>
+
+    </article>
+    
+</body>
+</html>

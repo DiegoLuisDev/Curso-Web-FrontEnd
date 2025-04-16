@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 { 
+    background-color: #a07c7c;
+    padding: 20px; /* padding colocará uma margem entre o conteudo e a sua caixa(por dentro) */
+    margin: 20px; /* margin colocará uma margem entre a caixa do conteudo e a borda(por fora) */
+}
+
+h2 {
+    background-color: #37a951;
+    width: 50%;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 50px;
+    /* margin: 50px 0 50 100px; */
+    text-align: center;
+}
+
+p {
+    
+    background-color: #ccc;
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 36px; 
+    Simplificando:*/
+    padding: 20px 36px 20px 20px;
+    text-align: justify;
+}
+.destaque {
+    background-color: orange;
+    color: #000;
+}

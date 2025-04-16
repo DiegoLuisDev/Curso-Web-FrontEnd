@@ -1,0 +1,9 @@
+/* Media Query não gera especificidades logo ele tem que ficar após o style ou sejo o css de formatação */
+@media screen and (min-width: 800px) and (orientation: landscape) 
+/* Landscape: horizontal quando o valor fica maior que 800px ele entra em ação
+Portrait: Vertical quando o valor vertical fica maior que 800px ele entra em ação*/
+{
+    .cards-container {
+        flex-direction: row;
+    }
+}

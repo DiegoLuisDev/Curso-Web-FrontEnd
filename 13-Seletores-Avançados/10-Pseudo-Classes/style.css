@@ -1,0 +1,55 @@
+button {
+    background-color: #7a7a7a;
+    color: white;
+    border: none;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+p:empty::before {
+    content: "Paragrado vazio!!!!";
+}
+
+a:hover,
+a:focus {
+    background-color: aquamarine;
+}
+
+input[type="text"]:read-write {
+/*  read-write: inputs que possuem leitura e escrita (apenas os que são editaveis)  */
+    background-color: #999;
+    border: none;
+    padding: 0.5em;
+}
+
+input[type="text"]:read-only:not(:disabled) {
+    /*  seleciona os inputs que contém read-only */
+        background-color: aqua;
+}
+
+input[type="text"]:disabled {
+    /* seleciona os inputs que contém disabled  */
+        background-color: rgb(225, 255, 0);
+}
+
+input[type="text"]::placeholder {
+    /*  seleciona os inputs que contém o placeholder   */
+    color: white;
+}
+
+input[type="text"]:placeholder-shown {
+    background-color: aqua;
+}
+
+p:only-child {
+    /*  seleciona o ÚNICO filho da tag P */
+        background-color: orange;
+}
+    
+div:target {
+        border: 2px solid black;
+}

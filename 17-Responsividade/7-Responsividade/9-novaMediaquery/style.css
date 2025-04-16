@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgb(98, 0, 255), rgb(98, 0, 255));
+    min-height: 100dvh;
+    font-family: sans-serif;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+/* Forma Antiga de Escrever Media Query */
+@media screen and (min-width: 42em) {
+    h1 {
+        color: green;
+    }
+}
+
+/* min-width - forma simplificada */
+@media (width > 50em) {
+    h1 {
+        color: yellow;
+    }
+}
+
+/* max-width - forma antiga */
+@media screen and (max-width: 38em) {
+    h1 {
+        color: red;
+    }
+}
+
+/* max-width - simplificado */
+@media (width <= 32em) {
+    h1 {
+        color: rgb(0, 255, 238);
+    }
+}
+
+
+/* max-width - simplificado */
+@media (38em < width <= 42em) {
+    body {
+        background-color: #ccc;
+        background-image: none;
+    }
+    h1 {
+        color: black;
+    }
+}

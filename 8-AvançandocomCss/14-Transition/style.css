@@ -1,0 +1,30 @@
+/* Transition */
+div {
+
+    --anima: cubic-bezier(.41,-0.73,.6,1.61);
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+
+    transition-property: width, height;
+    /* A propriedade que ela irá adicionar a transição, all significa todos*/
+    transition-duration: .5s, 1s;
+    /* A duração dessa transição, ms significa milisegundos*/
+    transition-timing-function: cubic-bezier(.41,-0.73,.6,1.61);
+    /* função */
+    transition-delay: 0s, 1s;
+    /* Temos que especificar o unidade de tempo: segundos, milisegundo... */
+
+    transition:
+    width .5s var(--anima),
+    height 1s var(--anima),
+    background-color 1.2s var(--anima);
+    /* Abreviação: property(all) duration(0s) function(ease) delay(0s) */
+}
+
+div:hover {
+    width: 400px;
+    height: 300px;
+    background-color: red;
+}

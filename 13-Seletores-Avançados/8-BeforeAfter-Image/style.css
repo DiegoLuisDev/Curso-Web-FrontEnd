@@ -1,0 +1,50 @@
+/* As pseudo-classes :before e :after não são exatamente pseudo-classes, mas sim pseudo-elementos. Eles são usados para inserir conteúdo antes ou depois do conteúdo de um elemento HTML. Aqui está uma explicação detalhada sobre o :after:
+
+Finalidade: Insere conteúdo após o conteúdo de um elemento. É comumente usado para adicionar elementos decorativos ou textos adicionais sem precisar alterar o HTML.
+Uso: Você deve usar a propriedade content para definir o que será inserido.
+
+Você pode usar :after para adicionar símbolos, imagens (com content: url('imagem.png');), ou até mesmo estilizações como background e border em conjunto com as propriedades CSS.
+Lembre-se de que :after e :before só funcionam em elementos que podem ter conteúdo, como <div>, <p>, <span>, etc.
+*/
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div {
+    width: 50vw;
+    border: 2px solid black;
+    font-size: 2rem;
+    padding: 1rem;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: block;
+    /* border-radius: 50%; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+p::before{
+    content: "Antes";
+}
+
+p::after{
+    content: "Depois";
+}
+
+div::before {
+    content: url(https://placehold.co/64/000000/FFFFFF/png);
+    float: left;
+    margin-left: 1em;
+    position: relative;
+}

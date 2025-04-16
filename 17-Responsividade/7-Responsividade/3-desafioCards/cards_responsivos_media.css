@@ -1,0 +1,7 @@
+@media screen and (min-width: 800px) and (orientation: landscape) {
+    /* landscape: Horizontal - A media irá verificar a horizontal */
+    /* portrait: Vertical - A media irá a vertical */
+    .cards_container {
+        flex-direction: row;
+    }
+}

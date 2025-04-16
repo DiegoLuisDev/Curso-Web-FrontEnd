@@ -1,0 +1,28 @@
+:root {
+    --red: red;
+    --blue: blue;
+    --green: green;
+}
+
+html {
+    font-size: 200%;
+}
+.div11{
+    --red: orange;
+}
+.div1 {
+    --blue: var(--red);
+}
+
+.div1 p {
+    color: var(--blue);
+    /* O p irá procurar a variavel no seu bloco, se não encontrar buscará no elemento pai */
+}
+
+.div2 {
+    --blue: var(--red);
+}
+
+.div2 p {
+    color: var(--blue);
+}

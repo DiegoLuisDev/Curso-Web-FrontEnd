@@ -1,0 +1,25 @@
+/*max-width: 500px - A pagina ficará com a formatação NO MINIMO 500px*/
+@media screen and (max-width: 500px) {
+    body {
+        background-color: brown;
+        color: white;
+    }
+}
+
+
+/* a {
+    color: inherit
+} */
+
+/* min-width:A pagina ficará com a formatação APARTIR DE 500px  */
+@media screen and (min-width: 600px) {
+    body {
+        background-color: blueviolet;
+    }
+}
+
+.teste {
+    width: 320px;
+    height: 80px;
+    background-color: darkorange;
+}

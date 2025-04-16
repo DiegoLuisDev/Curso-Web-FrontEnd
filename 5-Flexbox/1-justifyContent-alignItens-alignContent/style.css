@@ -1,0 +1,80 @@
+body {
+    margin-bottom: 500px;
+}
+.flexbox {
+    height: 250px;
+    display: flex;
+    border: solid 2px red;
+    margin-bottom: 16px;
+    /* flex-wrap: Quebra de linha
+    Nowrap: Não quebrará linha
+    Wrap: Quebrará linha */
+    /* flex-direction: Direção
+    Row: o padrão
+    row-reverse: muda a ordem de trás para frente, e muda o lado 
+    column: irá transformar em colunas 
+    column-reverse: transforma em coluna e muda a ordem
+    */
+    /* flex-flow: row;  
+    Ele faz o mesmo que o flex-wrap e flex-direction*/
+}
+
+.flexbox div{
+    border: solid 2px black;
+    width: 50px;
+    margin: 15px;
+}
+
+.flex-container1 {
+    flex-flow: wrap;
+}
+
+.flex-container2 {
+    justify-content: space-around;
+    /* start: não acontece nada
+    center: o conteúdo fica alinhado no centro
+    flex-end: alinhado a esquerda
+    space-around: dará espaçamento igualmente pra cada lado, com os elementos centrais ficando maior 
+    space-between: alinhará os elementos da ponta (primeiro e último) e os demais (meio) ficarám com um espaçamento maior. 
+    space-evenly: dará o mesmo espaço entre os elementos */
+}
+
+.flex-container2 div {
+    width: 30px;
+}
+
+.flex-container3 {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container3 div {
+    width: 30px;
+    margin: 0;
+}
+
+.flex-container4 {
+    justify-content: space-around;
+    align-items: baseline;
+    /* Alinha a base do elemento (2) com os demais elementos */
+}
+
+.flex-container4 div {
+    width: 30px;
+    margin: 0;
+}
+
+.flex-container5 {
+    justify-content: center;
+    /* align-items: flex-end; */
+    /* para quando temos apenas 1 linha, quando adicionamos o flex-wrap: nowrap*/
+    align-content: stretch;
+    /* Quando os elementos ficarem maior */
+    flex-wrap: wrap;
+    /* para quebrar a linha quando os elementos ficarem maior */
+}
+
+.flex-container5 div {
+    width: 150px;
+    /* quando aumentamos o elemento, ele tende a quebrar a linha com wrap, com isso align-content: flex-start entrará em ação */
+}

@@ -1,0 +1,38 @@
+/* Position em CSS é usada para definir como um elemento é posicionado na página. Dependendo do valor atribuído, o comportamento do elemento em relação ao fluxo normal do documento e a outros elementos pode mudar
+
+static: Para a maioria dos elementos que devem seguir a ordem natural da página.
+
+relative: Quando você precisa ajustar a posição de um elemento em relação ao seu local original.
+
+absolute: Para popups, modais, ou elementos que precisam estar em um local fixo na página.
+
+fixed: Para cabeçalhos ou rodapés que permanecem visíveis durante o scroll.
+
+sticky: Para menus ou elementos de navegação que seguem o usuário até certo ponto */
+
+.div1 {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 10px;
+    width: 90%;
+    height: 100px;
+    position:relative;
+    left: 10px;
+    /* top: 10px; */
+    /* bottom: 10px; */
+}
+
+.div2 {
+    background-color: rgba(0, 255, 0, 0.5);
+    padding: 10px;
+    width: 80%;
+    height: 50px;
+    position: relative;
+}
+
+.div3 {
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 10px;
+    width: 30%;
+    height: 30px;
+    position: relative;
+}

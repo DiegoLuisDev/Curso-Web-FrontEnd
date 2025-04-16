@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%;
+    padding-bottom: 200px;
+}
+
+h1 {
+    font-size: 3.4em;
+}
+
+b {
+    color: red;
+    font-size: 1em;
+    /* Este elemento está herdando 20px da tag p, o valor de 1em será em cima desse 20px, logo 2em equivale a 40px */
+
+    font-size: 2rem;
+    /* A tag b não recebe mais a herança da tag p, ele recebe diretamente do root (html) */
+
+    font-size: 50%;
+    /*  */
+}
+
+p {
+    font-size: 2em;
+    /* equivale a 20px, pois o p está herdando a propriedade do elemento pai */
+
+    background-color: #ccc;
+    width: 100px;
+}
+
+.porcentagem {
+    background-color: yellow;
+    width: 60%;
+}
+
+.porcentagem p {
+    background-color: orange;
+    padding-top: 10%;
+    width: 90%;
+}
+
+.padding-em {
+    background-color: red;
+}
+.padding-em p {
+    background-color: transparent;
+    padding: 1em;
+    /* Quando temos propriedades com valor em, e no mesmo elemento temos font-size, ele herdará valor do font-size */
+    font-size: 4rem; 
+}

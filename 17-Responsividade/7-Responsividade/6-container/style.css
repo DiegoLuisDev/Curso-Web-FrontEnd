@@ -1,0 +1,95 @@
+/* INTRODUÇÃO A CONTAINER */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card_container {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+/* .card_wrapper, main {
+    container-type: inline-size;
+} */
+
+.card_wrapper {
+    /* container-name: cardWrapper; */
+    container: cardWrapper / inline-size;
+    /* Definindo o tipo e nome numa unica linha */
+}
+
+.main {
+    /* container-name: main; */
+    container: main / inline-size;
+    /* Definindo o tipo e nome numa unica linha */
+}
+
+.card {
+    border: 2px solid #999;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_header {
+    background-color: yellow;
+}
+
+.card_header img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 10em;
+    /* max-height: a image se limitará até 10em */
+    object-fit:fill;
+    /* object-fit: cover - a image irá cobrir todo o caixa que está inserida*/
+    object-position: center;
+}
+
+.card_body {
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #ccc;
+    flex-grow: 1;
+}
+
+.card_body p {
+    margin: 0 0 1em 0;
+}
+
+.card_btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: darkslategrey;
+    color: white;
+    padding: .75em 1em;
+    display: inline-block;
+}
+
+/* CONTAINER 
+    Ao inves de observar a view port ele observa o container */
+
+    
+/* @media screen and (min-width: 50em) { */
+@container cardWrapper (min-width: 50em) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card_header img {
+        max-height: initial;
+    }
+}
+
+/* @media screen and (min-width: 55em) { */
+@container main (min-width: 60em) {
+    .card_container {
+        flex-direction: row;
+    }
+    .card_wrapper {
+        flex-grow: 1;
+    }
+    .card {
+        flex-direction: column;
+    }
+}

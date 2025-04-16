@@ -1,0 +1,84 @@
+/* Flex Grow e Flex Shrink */
+
+body {
+    margin-bottom: 500px;
+}
+.flexbox {
+    height: 250px;
+    display: flex;
+    border: solid 2px red;
+    margin-bottom: 16px;
+}
+
+.flexbox div{
+    border: solid 2px black;
+    width: 50px;
+    margin: 15px;
+}
+
+.flex-container1 {
+    justify-content: center;
+    align-items: center;
+    /* Quando não adicionamos o flex-direction: row, o padrão é row */
+    gap: 10px;
+}
+
+.flex-container1 div {
+    flex-basis: 50px; 
+    background-color: orange;
+    margin: 0;
+}
+
+.flex-container1 .div2 {
+    flex-grow: 1; /* 33,33% - 1/3
+    Pegará os espaços sobrando e colocará no elemento selecionado, o valor significa quantos % cada um terá, dependo do se terá algum outro elemento com flex-grow, se tiver eles se dividiram os espaços.
+    Quando a tela é diminuida, chegará um momento em que os elementos se tornaram do mesmo tamanho, pois já não haverá espaços sobrando*/
+}
+
+ .flex-container1 .div4 {
+    flex-grow: 2; /* 66,66 - 2/3 
+    Quanto mais elementos, mais */
+}
+
+.flex-container2 {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.flex-container2 div {
+    background-color: blue;
+    color: white;
+    flex-basis: 250px;
+    margin: 0;
+}
+
+.flex-container2 .div1 {
+    flex-shrink: 2; /* o padrão é 1, ele diminuirá com o mesmo tamanho, porém se o valor for 2, 3, 4 ele dará a porcetagem necessaria para cada elemento */
+}
+
+.flex-container2 .div2 {
+    flex-shrink: 3; /* Somente fará sentido quando colocamos valores maiores que 1 (o padrão é 1), com o valor 1, os elementos diminuiram com o mesmo tamanho, porém se o valor for 2, 3, 4 ele dará a porcetagem necessaria para cada elemento.
+    Nesse caso o valor da div2 é 3, e div1 é 2, sigfica que a div2, diminuirá mais rapido que a div1. */
+}
+
+.flex-container3 {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.flex-container3 div {
+    background-color: red;
+    color: white;
+    margin: 0;
+}
+
+.flex-container3 .div1 {
+    /* podemos abreviar o flex-grow, flex-shrink e flex basis: 
+    flex: grow shrink basis*/
+    flex: 1 3 200px;
+ /* grow - pegando espaços que sobram
+    shrink - diminui o elemento
+    basis - da a largura */
+}

@@ -1,0 +1,9 @@
+.iframContainer {
+    display: flex;
+    gap: 1em;
+}
+
+.iframContainer iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}

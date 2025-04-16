@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meter</h1>
+    <label for="combustivel">Nível do combustível</label>
+    <meter id="combustivel" min="0" max="100" low="30" high="80" value="90" optimum="60"></meter>
+<!--no meter teremos que declarar o valor minimo
+    min: valor minimo
+    max: valor maximo
+    low: valor minimo dentro do ideal
+    high: valor maximo dentro do ideal
+    optimum: valor ideal -->
+
+    <h1>Progress</h1>
+    <label>Porcentagem da tarefa
+        <progress max="100" value="70"> 70%
+        </progress>
+    </label>
+    <!-- Progress: Medi o progress de alguma atividade
+    No progress não precisamos declarar o min; pois o padrão é 0, também é importante declarar o valor dentro da tag
+     -->
+    <br><br>
+
+</body>
+</html>

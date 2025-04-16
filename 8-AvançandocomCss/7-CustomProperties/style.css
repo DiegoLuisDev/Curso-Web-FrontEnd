@@ -1,0 +1,40 @@
+/* Custom Properties */
+
+:root {
+    --header-height: 15rem;
+    --main-color: rgba(255, 0, 0, 0.8);
+    /* Lugar mais para armazer declarar as variaveis */
+}
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    background-color: var(--main-color   ) ;
+    height: var(--header-height);
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    /* --header-height: 2rem; */
+    min-height: calc(100vh - var(--header-height) - 2rem);
+    background-color: #ccc;
+    font-size: 2rem;
+    margin-top: var(--header-height);
+    /* O valor passar a ser 2 rem da variavel interna */
+}
+
+p {
+    margin: calc(var(--header-height) * 2)
+    /* como temos 2 p, o do main vai pegar da variavel main (2rem) e o footer vai pegar do html (15rem) */
+}
+
+footer {
+    height: 10rem;
+    font-size: 2rem;
+    background-color: blue;
+}

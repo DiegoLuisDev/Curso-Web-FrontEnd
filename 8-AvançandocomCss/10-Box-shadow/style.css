@@ -1,0 +1,29 @@
+/* O box-shadow é uma propriedade do CSS que adiciona sombras a elementos, criando um efeito de profundidade. Ela permite que você defina uma sombra ao redor de um elemento, que pode ser personalizada em termos de tamanho, cor, desfoque, e até mesmo posição.*/
+html, body {
+    height: 100%;     
+}
+body {
+    background-color: #ccc;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50px 20px 0px 80px / 100px 50px 0 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    /* Sombra:
+    Primeiro valor: Positivo para direita, negativo para esquerda.
+    Segundo valor: Positivo para baixo, negativo para cima.
+    Terceiro valor: Espuçamento quanto maior o valor mais espumaçado fica.
+    Quarto valor: Apliação, quanto maior o valor, mais ampliado ficará.
+    Quinto valor: A cor. */
+
+    /* box-shadow: 10px 0 0 black, 0 10px 0 red, -10px 0 0 blue, 0 -10px 0 yellow; */
+}
